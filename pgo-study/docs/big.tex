@@ -1,0 +1,9 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,tikz,lipsum,hyperref}
+\begin{document}
+\count255=0
+\loop\ifnum\count255<60 \advance\count255 1
+\section{S}\lipsum[1-6] $\int_0^1 f(x)\,dx=\sum_{n} a_n$
+\begin{tikzpicture}\draw[->] (0,0)--(2,1); \foreach \i in {1,...,20} \draw (\i/10,0) circle (0.1);\end{tikzpicture}
+\repeat
+\end{document}

@@ -1,0 +1,9 @@
+\documentclass{beamer}\usetheme{Madrid}\usepackage{amsmath,booktabs}
+\begin{document}
+\count255=0
+\loop\ifnum\count255<80 \advance\count255 1
+\begin{frame}{Frame \the\count255}\begin{itemize}\item First $a^2+b^2=c^2$\item Second \textbf{bold}\pause\item Third\end{itemize}
+\begin{tabular}{lrr}\toprule A&1&2\\\midrule B&3&4\\\bottomrule\end{tabular}
+\begin{align}x&=\frac{1}{2}\\ y&=\sqrt{x}\end{align}\end{frame}
+\repeat
+\end{document}
